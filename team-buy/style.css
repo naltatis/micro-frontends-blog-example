@@ -1,0 +1,82 @@
+buy-product {
+  background-color: lightblue;
+  display: block;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+buy-product img {
+  width: 20%;
+}
+
+buy-product strong {
+  display: block;
+}
+
+buy-product button {
+  display: block;
+}
+
+buy-cart {
+  display: flex;
+}
+
+buy-cart ol {
+  padding: 0 0.5rem;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  background-color: rgba(255,255,255,0.5);
+  border: 2px dashed rgba(255,255,255,0.75);
+  border-radius: 0.5rem;
+  min-width: 150px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+buy-cart ol:empty::after {
+  content: "Warenkorb";
+  color: rgba(255,255,255,0.5);
+}
+
+
+buy-cart li {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+buy-cart li::after {
+  content: "x";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  background-color: #fff;
+  transition: opacity 0.15s ease-out;
+  z-index: 1;
+  font-size: 2rem;
+  color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+buy-cart li:hover::after {
+  opacity: .75;
+}
+
+buy-cart img {
+  display: block;
+  height: 45px;
+  position: relative;
+  pointer-events: none;
+}
