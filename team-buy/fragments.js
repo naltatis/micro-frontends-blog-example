@@ -41,7 +41,7 @@ class BuyProduct extends HTMLElement {
       : `<button>für ${price} kaufen</button>`;
 
     this.innerHTML = `
-      <img src="./team-buy/images/${image}">
+      <img src="../team-buy/images/${image}">
       <strong>${name}</strong>
       ${button}
     `;

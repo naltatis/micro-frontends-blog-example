@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Custom Elements Polyfill for FF <= 61, Edge & IE 11 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.5.0/document-register-element.js"></script>
+  <link href="./style.css" rel="stylesheet">
+  <link href="../team-buy/style.css" rel="stylesheet">
+  <script src="../team-buy/fragments.js"></script>
+  <title>Der Blog. [Micro Frontends]</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <strong>Der Blog mit Shop.</strong>
+      <buy-cart></buy-cart>
+    </header>
+    <article>
+      <h1>
+        <span>Mein erster Garten</span>
+      </h1>
+      <p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab ipsum mollitia dolorem illo quaerat fugiat tempore
+          debitis necessitatibus? Id maiores sapiente saepe doloribus nostrum quisquam illum aperiam soluta necessitatibus?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab ipsum mollitia dolorem illo quaerat fugiat.</span>
+      </p>
+      <buy-product sku="animal1"></buy-product>
+      <p>
+        <span>Ipsum dolor sit amet consectetur adipisicing elit. Cumque ab ipsum mollitia dolorem illo quaerat fugiat tempore debitis
+          necessitatibus? Id maiores sapiente saepe doloribus nostrum quisquam illum aperiam soluta necessitatibus? debitis
+          maiores? Id maiores sapiente saepe doloribus nostrum quisquam illum aperiam soluta necessitatibus?</span>
+      </p>
+      <buy-product sku="animal2"></buy-product>
+      <p>
+        <span>Dolor sit amet consectetur adipisicing elit. Cumque ab ipsum mollitia dolorem illo quaerat fugiat tempore debitis
+          necessitatibus? Id maiores sapiente saepe doloribus nostrum quisquam illum aperiam soluta necessitatibus? Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Cumque ab ipsum mollitia dolorem illo quaerat fugiat tempore
+          debitis necessitatibus? Id maiores sapiente saepe doloribus nostrum quisquam illum aperiam soluta necessitatibus?</span>
+      </p>
+      <button>Kommentar schreiben</button>
+    </article>
+  </main>
+</body>
+
+</html>
