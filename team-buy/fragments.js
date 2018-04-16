@@ -77,7 +77,7 @@ class BuyCart extends HTMLElement {
       const { name, price, image } = products[sku];
       items += `
         <li data-sku="${sku}" role="button" tabindex="0">
-          <img src="./team-buy/images/${image}">
+          <img src="../team-buy/images/${image}">
         </li>
       `;
     });
