@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 * {
   box-sizing: border-box;
 }
@@ -7,24 +9,29 @@ html {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   line-height: 1.4em;
   font-size: 1.6rem;
-  padding: 0;
+  padding: 0 2rem;
   margin: 0;
 }
 
-article {
+main {
+  border: 3px solid #517DAE;
+  border-radius: 1rem;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 1rem auto;
+}
+
+article {
   padding: 1rem 2rem;
 }
 
 header {
-  background-color: rgb(4, 5, 46);
-  color: rgb(204, 223, 252);
+  background-color: #468BAE;
+  color: white;
   font-size: 2rem;
-  padding: 0.25rem 5rem;
+  padding: 0.25rem 2rem;
   margin: 0 0 2rem;
   position: sticky;
   top: 0;
@@ -32,18 +39,36 @@ header {
   align-items: stretch;
   justify-content: space-between;
   min-height: 60px;
+  z-index: 1;
 }
 
 header strong {
+  font-size: 3rem;
+  font-weight: bold;
   align-self: center;
 }
 
 h1 span,
 p span {
-  background-color: rgb(135, 129, 161);
+  background-color: #468BAE;
   color: transparent;
+  opacity: 0.5;
 }
 
 p {
   margin: 4rem 0;
+}
+
+
+article > button {
+  display: block;
+  background-color: #468BAE;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  border: 0;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 0 2rem;
+  margin: 1.5rem 0;
 }

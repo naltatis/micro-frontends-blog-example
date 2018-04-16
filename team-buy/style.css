@@ -21,6 +21,7 @@ buy-product strong {
   display: block;
   flex: 1;
   margin-left: 2rem;
+  font-size: 2.5rem;
 }
 
 buy-product button {
@@ -49,14 +50,14 @@ buy-cart {
 
 buy-cart ol {
   padding: 0 0.5rem;
-  margin: 1.5rem;;
+  margin: 1.5rem 0;
   display: flex;
   list-style-type: none;
   border: 3px solid rgb(209, 169, 36);
-  box-shadow: 0 10px 15px rgb(77, 57, 5);
+  box-shadow: 0 5px 10px rgb(172, 144, 69);
   background-color: white;
   color: rgb(129, 123, 30);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   min-width: 150px;
   justify-content: space-around;
   align-items: center;
@@ -79,8 +80,8 @@ buy-cart li::after {
   position: absolute;
   height: 2rem;
   width: 2rem;
-  top: -0.3rem;
-  right: -0.3rem;
+  top: -0.5rem;
+  right: -0.5rem;
   background-color: rgb(209, 169, 36);
   border-radius: 50%;
   transition: opacity 0.15s ease-out;

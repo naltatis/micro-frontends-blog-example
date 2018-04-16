@@ -1,13 +1,13 @@
 const products = {
-  book1: {
-    name: "Der Biogarten",
+  animal1: {
+    name: "Die Ente.",
     price: "29,99 €",
-    image: "biogarten.png"
+    image: "ente.png"
   },
-  book2: {
-    name: "Der Bienen Buch",
+  animal2: {
+    name: "Die Schildkröte.",
     price: "19,99 €",
-    image: "bienen.png"
+    image: "schildkroete.png"
   }
 };
 
@@ -48,7 +48,6 @@ class BuyProduct extends HTMLElement {
   }
 
   addToCart(e) {
-    console.log(e, e.target);
     if (e.target.tagName !== "BUTTON") {
       return;
     }
